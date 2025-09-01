@@ -1,4 +1,5 @@
-
+int xVel = 2;
+int xPos = 0;
 
 void setup(){
 size(200,200);
@@ -6,6 +7,8 @@ size(200,200);
 }
 
 void draw(){
-ellipse(50,50,20,20);
+background(255);
+xPos = xPos + xVel;
+ellipse(xPos,50,20,20);
 
 }
